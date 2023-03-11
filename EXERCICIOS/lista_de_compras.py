@@ -1,3 +1,5 @@
+import os
+
 '''
 Faça uma lista de compras com listas
 O usuário deve ter a possiblidade de inserir,
@@ -11,6 +13,7 @@ produto = ''
 indice = ''
 
 while True:
+    print("\n")
     try:
         print(5*'=', 'Minha Lista', 5*'=')
         print('1 - Inserir na lista')
@@ -59,4 +62,5 @@ while True:
             print('Opção Inválida!!!')
             continue
     except:
+        os.system('cls')
         continue
