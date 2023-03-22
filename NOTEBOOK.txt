@@ -1,0 +1,7 @@
+===SPLIT, JOIN E STRIP===
+-> Métodos úteis para str. 
+-> split() = Faz a substring da string com base no separador de parâmetro.
+-> strip() = Retira espaços da str, tendo variações como: rstrip() e lstrip()
+-> '<separador>'.join() = Faz a união de string
+
+===Lista dentro de listas (iterável dentro de iterável)===
