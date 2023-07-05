@@ -1,4 +1,6 @@
 # Exercício - sistema de perguntas e respostas
+pontuacao = 0
+
 
 perguntas = [
     {
@@ -25,8 +27,19 @@ perguntas = [
 for x in perguntas:
     print(x['Pergunta'])
     for i, opcao in enumerate(x['Opções']):
-        print(f'{i}) opcao')
-    resposta = str(input('Escolha a resposta: '))
+        print(f'{i}) {opcao}')
+    resposta = int(input('Escolha a resposta: '))
+
+    print(x['Opções'][resposta])
+
+    if x['Opções'][resposta] == x['Resposta']:
+        print("✔️ ACERTOU!",end="\n\n")
+        pontuacao += 1
+    else:
+        print("❌ ERROU!",end="\n\n")
+
+print(f'Sua pontuação foi {pontuacao}')
+    
 
 
 
