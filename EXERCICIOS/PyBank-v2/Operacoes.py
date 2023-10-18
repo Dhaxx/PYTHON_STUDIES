@@ -5,8 +5,7 @@ ADICIONAR SALDOS/LIMITES/EXTRATOS POR CONTA CORRENTES
 saques_realizados = 0
 contador_conta = 0
 transacoes = []
-usuarios = [{'nome': 'Kaio Pablo Martins', 'data_nascimento': '09-01-2003', 'cpf': 14547882673, 'endereco': ('Teste', ' ', 80, '-', 'Teste', '-', 'Teste', '/', 'SP')},
-            {'nome': 'Beatriz Oliveira Cassin', 'data_nascimento': '08-09-2005', 'cpf': 99999999999, 'endereco': ('Teste', ' ', 80, '-', 'Teste', '-', 'Teste', '/', 'SP')}]
+usuarios = []
 contas_correntes = []
 
 def sacar(limite_de_saque, limite_de_valor, valor, saldo):
