@@ -99,7 +99,7 @@
 # print(f'A quantidade de Pisos é: {quantidade_de_pisos:.2f}')
 # print(f'A quantidade de Rodapés é: {quantidade_de_rodapes:.2f}')
 
-'''Classe Pessoa: Crie uma classe que modele uma pessoa:
+'''4.Classe Pessoa: Crie uma classe que modele uma pessoa:
     Atributos: nome, idade, peso e altura
     Métodos: Envelhercer, engordar, emagrecer, crescer. Obs: Por padrão, a cada ano que nossa pessoa envelhece, sendo a idade dela menor que 21 anos, ela deve crescer 0,5 cm.'''
 
@@ -123,4 +123,58 @@
 #     def emagrecer(self):
 #         self.peso -= 1.0
 
-''''''
+'''5.Classe Conta Corrente: Crie uma classe para implementar uma conta corrente. A classe deve possuir os seguintes atributos: número da conta, 
+    nome do correntista e saldo. Os métodos são os seguintes: 
+    alterarNome, depósito e saque; No construtor, saldo é opcional,
+    com valor default zero e os demais atributos são obrigatórios.'''
+
+# class ContaCorrente:
+#     def __init__(self, num_conta, nome, saldo):
+#         self.nconta = num_conta
+#         self.nome = nome
+#         self.saldo = saldo if saldo != None else 0
+
+#     def alterarNome(self):
+#         self.nome = input('Digite o novo nome: ')
+
+#     def deposito(self):
+#         valor = float(input('Digite o valor do Depósito: '))
+#         if valor > 0:
+#             self.saldo += valor 
+#         else:
+#             print('Operação Cancelada! O valor deve ser maior que 0!')
+
+#     def saque(self):
+#         valor = float(input('Digite o valor do Saque: '))
+#         if self.saldo >= valor:
+#             self.saldo -= valor  
+#         else:
+#             print(f'Operação Cancelada! Saldo Atual: {self.saldo}')
+
+'''6.Classe TV: Faça um programa que simule um televisor criando-o como um objeto. O usuário deve ser capaz de informar o número do canal e aumentar ou diminuir o volume.
+    Certifique-se de que o número do canal e o nível do volume permanecem dentro de faixas válidas.'''
+
+# class TV:
+#     _VOLUME_MAX = 100
+#     _VOLUME_MIN = 0
+
+#     _CANAL_MAX = 80
+#     _CANAL_MIN = 1
+
+#     def __init__(self):
+#         self.volume_atual = 0
+#         self.canal = 1
+
+#     def aumenta_volume(self, valor):
+#         valor_aumentado = self.volume_atual + valor
+#         if valor_aumentado >= self._VOLUME_MIN and valor_aumentado <= self._VOLUME_MAX:
+#             self.volume_atual = valor_aumentado
+
+#     def diminui_volume(self, valor):
+#         valor_diminuido = self.volume_atual - valor
+#         if valor_diminuido >= self._VOLUME_MIN and valor_diminuido <= self._VOLUME_MAX:
+#             self.volume_atual = valor_diminuido      
+
+#     def muda_canal(self, valor):
+#         if valor >= self._CANAL_MIN and valor <= self._CANAL_MAX:
+#             self.canal = valor
